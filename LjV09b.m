@@ -18,9 +18,6 @@ frequency_data = file(1:2:length(file));
 F0 = file(2:2:length(file));
 index = 1;
 max_value = 0;
-disp('running')
-fileID = fopen('test.txt','w');
-fprintf(fileID,'%f\n',file);
 
 %disp(frequency_data)
 
