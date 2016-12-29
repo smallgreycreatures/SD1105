@@ -1,5 +1,6 @@
 %Written by Frans Nordén 
 %Last changed 2016-12-29
+clear
 
 x1 = 0; %[m]engine vertical position
 x2 = 0; %[m]seismic mass vertical position
@@ -20,8 +21,6 @@ file_id = fopen('kraft.bin', 'rb');
 file = fread(file_id, 'float32');
 frequency_data = file(1:2:length(file));
 F0 = file(2:2:length(file));
-index = 1;
-max_value = 0;
 
 %disp(frequency_data)
 

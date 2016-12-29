@@ -20,7 +20,7 @@ for i = 1:8 %seems unreasonable to go under 10^-8
 
         if max_hull_force_and_freq(1) < max_force_on_hull+1 && max_hull_force_and_freq(1) > max_force_on_hull-1
 
-            if round(real(max_hull_force_and_freq(1))) == max_force_on_hull
+            if round(real(max_hull_force_and_freq(1))) == max_force_on_hull %rounds to closest integer as in req
                 calculated_mass = m2;
             end
         
